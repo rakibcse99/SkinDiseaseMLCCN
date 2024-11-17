@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_search"
+            android:title="Disease Page " />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_syndrome"
+            android:title="Syndrome" />
+        <item
+            android:id="@+id/nav_treatment"
+            android:icon="@drawable/ic_treatement"
+            android:title="Treatement" />
+        <item
+            android:id="@+id/disease_gellary"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Skin Disease Gellary" />
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+
+
+            <!--            <item-->
+            <!--                android:id="@+id/more"-->
+            <!--                android:icon="@drawable/more"-->
+            <!--                android:title="More kids Apps" />-->
+            <item
+                android:id="@+id/ratapps"
+                android:icon="@drawable/ic_rating"
+                android:title="Rating Apps" />
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+
+
+
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy policy" />
+
+<!--            <item-->
+<!--                android:id="@+id/nav_exit"-->
+<!--                android:icon="@drawable/exit"-->
+<!--                android:title="Exit" />-->
+
+        </menu>
+    </item>
+</menu>

@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rakibcse99.profileviewapps"
+    namespace = "com.rakibcse99.diseaseml"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rakibcse99.profileviewapps"
+        applicationId = "com.rakibcse99.diseaseml"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -55,6 +55,8 @@ dependencies {
     implementation ("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("androidx.activity:activity:1.9.3")
+    //implementation(project(":app"))
     kapt("com.google.dagger:hilt-compiler:2.47")
 
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.4")

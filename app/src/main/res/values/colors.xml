@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorSecondary">#115D59</color>
+    <color name="colorPrimaryDayNight">#15282E</color>
+    <color name="primary">#15282E</color>
+    <color name="secondary">#115D59</color>
+    <color name="tertiary">#199E83</color>
+    <color name="highlight">#00DBB8</color>
+    <color name="help">#F2AA52</color>
+    <color name="warning">#FF0000</color>
+    <color name="success">#47B881</color>
+
+
+    <color name="bodyText">#000000</color>
+    <color name="titleText">#15282E</color>
+    <color name="subtitleText">#115D59</color>
+    <color name="disableText">#AAAAAA</color>
+    <color name="helpText">#F2AA52</color>
+    <color name="warningText">#FF0000</color>
+    <color name="successText">#47B881</color>
+    <color name="inverseText">#FFFFFF</color>
+    <color name="focusText">#C5F5FF</color>
+
+    <color name="primaryBG">#F6FBFB</color>
+    <color name="secondaryBG">#FAFAFA</color>
+    <color name="tertiaryBG">#E3F6F9</color>
+    <color name="disableBG">#E2E2E2</color>
+    <color name="helpBG">#FEF7EF</color>
+    <color name="warningBG">#FFEDE9</color>
+    <color name="successBG">#EEF8F2</color>
+    <color name="buttonBG">#F0FCFF</color>
+    <color name="focusBG">#C5F5FF</color>
+
+    <color name="percentile">#C5F5FF</color>
+    <color name="population">#D7F7FF</color>
+    <color name="ProgressBG">#104952</color>
+
 </resources>

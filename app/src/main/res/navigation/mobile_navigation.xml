@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rakibcse99.diseaseml.ui.fragment.HomeFragment"
+        android:label="Disease Page"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.rakibcse99.diseaseml.ui.fragment.SyndromeFragment"
+        android:label="Syndrome Page"
+        tools:layout="@layout/fragment_syndrome" />
+
+    <fragment
+        android:id="@+id/nav_treatment"
+        android:name="com.rakibcse99.diseaseml.ui.fragment.TreatmentFragment"
+        android:label="Treatment Page"
+        tools:layout="@layout/fragment_treatment" />
+    <fragment
+        android:id="@+id/treatmentDetailsFragment"
+        android:name="com.rakibcse99.diseaseml.ui.fragment.TreatmentDetailsFragment"
+        android:label="Treatment Details Page"
+        tools:layout="@layout/fragment_treatment_details" />
+
+</navigation>

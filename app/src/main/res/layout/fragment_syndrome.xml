@@ -1,0 +1,14 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rakibcse99.diseaseml.ui.fragment.SyndromeFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recylerview"
+       tools:itemCount="20"
+       tools:listitem="@layout/row_syndrome"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
