@@ -1,94 +1,226 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rakibcse99.diseaseml.ui.fragment.HomeFragment">
 
-  <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-      <androidx.appcompat.widget.AppCompatImageView
-          app:srcCompat="@drawable/image_eczema"
-          android:layout_width="400dp"
-          android:layout_margin="20dp"
-          android:layout_gravity="center"
-          android:layout_height="300dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-      <com.google.android.material.button.MaterialButton
-          android:text="Upload Image"
-          android:textStyle="bold"
-          android:textAlignment="center"
-          android:textSize="14dp"
-          app:strokeWidth=".5dp"
-          app:cornerRadius="5dp"
-          app:strokeColor="@color/black"
-          app:elevation="1dp"
-          android:layout_marginVertical="10dp"
-          android:layout_marginHorizontal="20dp"
-          android:textColor="@color/primary"
-          app:backgroundTint="@color/buttonBG"
-          android:layout_width="match_parent"
-          android:layout_height="50dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/image_eczema" />
 
-      <com.google.android.material.button.MaterialButton
-          android:text="Finding Skin Disease"
-          android:textStyle="bold"
-          android:textAlignment="center"
-          android:textSize="14dp"
-          app:strokeWidth=".5dp"
-          app:strokeColor="@color/black"
-          app:elevation="1dp"
-          android:drawableEnd="@drawable/ic_search"
-          app:cornerRadius="5dp"
-         android:layout_marginVertical="10dp"
-          android:layout_marginHorizontal="20dp"
-          android:textColor="@color/primary"
-          app:backgroundTint="@color/buttonBG"
-          android:layout_width="match_parent"
-          android:layout_height="50dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:text="Upload Image"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/buttonBG"
+            app:cornerRadius="5dp"
+            app:elevation="1dp"
+            app:icon="@android:drawable/ic_menu_upload"
+            app:strokeColor="@color/black"
+            app:strokeWidth=".5dp" />
 
-      <TextView
-          android:id="@+id/titleTV"
-          android:textSize="18sp"
-          android:textStyle="bold"
-          android:layout_marginVertical="10dp"
-          android:layout_marginHorizontal="20dp"
-        android:textAlignment="center"
-          android:textColor="@color/black"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
+        <!--        <TextView-->
+        <!--            android:id="@+id/diseasetext"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:text="Disease name: Eezima"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+        <!--      <com.google.android.material.button.MaterialButton-->
+        <!--          android:text="Finding Skin Disease"-->
+        <!--          android:textStyle="bold"-->
+        <!--          android:textAlignment="center"-->
+        <!--          android:textSize="14dp"-->
+        <!--          app:strokeWidth=".5dp"-->
+        <!--          app:strokeColor="@color/black"-->
+        <!--          app:elevation="1dp"-->
+        <!--          android:drawableEnd="@drawable/ic_search"-->
+        <!--          app:cornerRadius="5dp"-->
+        <!--         android:layout_marginVertical="10dp"-->
+        <!--          android:layout_marginHorizontal="20dp"-->
+        <!--          android:textColor="@color/primary"-->
+        <!--          app:backgroundTint="@color/buttonBG"-->
+        <!--          android:layout_width="match_parent"-->
+        <!--          android:layout_height="50dp"/>-->
 
-      <TextView
-          android:id="@+id/discripTV"
-          android:textSize="14sp"
-          android:layout_marginVertical="10dp"
-          android:layout_marginHorizontal="20dp"
-          android:textColor="@color/black"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-      <com.google.android.material.button.MaterialButton
-         android:id="@+id/treatmentBtn"
-          android:text="Follow Treatment Gudline"
-          android:textStyle="bold"
-          android:textAlignment="center"
-          android:textSize="14dp"
-          app:strokeWidth="1dp"
-          app:strokeColor="@color/white"
-          app:elevation="1dp"
-          android:layout_gravity="center"
-          android:gravity="center"
-          android:paddingEnd="10dp"
-          app:cornerRadius="5dp"
-          android:drawableEnd="@drawable/ic_array_right"
-          android:layout_marginVertical="10dp"
-          android:layout_marginHorizontal="20dp"
-          android:textColor="@color/white"
-          app:backgroundTint="@color/bodyText"
-          android:layout_width="match_parent"
-          android:layout_height="50dp"/>
-  </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/secondaryBG"
+            app:cardCornerRadius="4dp"
+            app:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="15dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:id="@+id/tv_item_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accuracy of disease"
+                    android:textAllCaps="true"
+                    android:textColor="@color/titleText"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/progressbar_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_progress_bar1"
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_marginHorizontal="3dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.615">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/progress_layout1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_progress_indicator1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.6"
+                            android:src="@drawable/ic_circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/iv_progress_indicatorBackground1"
+                            android:layout_width="31dp"
+                            android:layout_height="31dp"
+                            android:src="@drawable/ic_circle"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+
+                        <TextView
+                            android:id="@+id/tv_progress1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/text_round"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/highlight"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="92" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_description_1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="@dimen/marginSmall"-->
+                <!--                    android:textAlignment="textStart"-->
+                <!--                    android:textColor="@color/bodyText"-->
+                <!--                    android:textSize="@dimen/textSizeSmall" />-->
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/discripTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/treatmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:drawableEnd="@drawable/ic_array_right"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="Follow Treatment Gudline"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/bodyText"
+            app:cornerRadius="5dp"
+            app:elevation="1dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
 </ScrollView>

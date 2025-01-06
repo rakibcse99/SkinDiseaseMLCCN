@@ -34,7 +34,7 @@ class NetworkModule {
     @Singleton
     @Provides
     fun provideOkHttpClient(
-
+        authInterceptor: AuthInterceptor
     ): OkHttpClient {
         return OkHttpClient.Builder()
             .connectionPool(ConnectionPool(0, 1, TimeUnit.NANOSECONDS))
@@ -43,6 +43,7 @@ class NetworkModule {
             .readTimeout(TIME_OUT, TimeUnit.SECONDS)
             .writeTimeout(TIME_OUT, TimeUnit.SECONDS)
             .addInterceptor(getLogInterceptors())
+            .addInterceptor(authInterceptor)
             .followRedirects(false)
             .followSslRedirects(false)
             .build()

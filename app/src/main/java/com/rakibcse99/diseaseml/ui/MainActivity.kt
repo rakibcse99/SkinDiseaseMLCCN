@@ -33,62 +33,6 @@ private lateinit var  binding: ActivityMainBinding
         setSupportActionBar(binding.toolbar)
         supportActionBar!!.setDisplayShowTitleEnabled(true) // Hide the default title
         binding.shimmerLChatList.startShimmer()
-        viewModeCharacter.getCharacter()
-        initViews()
-        lifecycleScope.launch {
-            viewModeCharacter.characterModelResult.collectLatest {
-
-                when (it.status) {
-                    Status.SUCCESS -> {
-                       binding.shimmerLChatList.stopShimmer()
-                       binding.shimmerLChatList.visibility = View.GONE
-
-                        val characterModel = it.data
-                        characterModel?.apply {
-                            characterViewAdapter.differ.submitList(toList())
-
-                        }
-                    }
-                        Status.LOADING -> {
-                            binding.shimmerLChatList.startShimmer()
-                        }
-                        Status.ERROR -> {
-                            binding.shimmerLChatList.stopShimmer()
-                            binding.shimmerLChatList.visibility = View.GONE
-
-                            val errMsg = it.error?.message ?: ""
-                            Toast.makeText(this@MainActivity, (errMsg), Toast.LENGTH_SHORT).show()
-                        }
-                    }
-
-                }
-            }
-        }
-
-
-    private fun initViews() {
-      binding.apply{
-            recylerview.apply {
-                setHasFixedSize(true)
-                layoutManager = LinearLayoutManager(this@MainActivity, RecyclerView.VERTICAL, false)
-                adapter = characterViewAdapter
-            }
-          swipeRefreshLayout.setOnRefreshListener {
-          viewModeCharacter.getCharacter()
-              swipeRefreshLayout.isRefreshing = false
-          }
-        }
-    }
-
-
-    override fun onResume() {
-        super.onResume()
-     binding.shimmerLChatList.startShimmer()
-
-    }
-
-    override fun onPause() {
-      binding.shimmerLChatList.stopShimmer()
-        super.onPause()
+//      }
     }
 }

@@ -56,6 +56,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.activity:activity:1.9.3")
+    implementation("com.google.android.gms:play-services-cast-framework:22.0.0")
     //implementation(project(":app"))
     kapt("com.google.dagger:hilt-compiler:2.47")
 
@@ -89,5 +90,4 @@ dependencies {
     // glide libary image load
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     implementation("com.facebook.shimmer:shimmer:0.5.0")
-
 }
