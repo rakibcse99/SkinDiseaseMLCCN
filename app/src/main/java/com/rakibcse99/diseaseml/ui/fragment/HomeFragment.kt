@@ -110,7 +110,7 @@ class HomeFragment : Fragment() {
                     val disease = diseaseRepository.findDisease(topDisease)
 
                     if (disease != null) {
-                        binding.titleTV.text = disease.name
+                        binding.titleTV.text = "Disease name "+disease.name
                         binding.discripTV.text = disease.description
                     } else {
                         binding.titleTV.text = topDisease
@@ -118,6 +118,7 @@ class HomeFragment : Fragment() {
                     }
 
                 } else {
+                    binding.titleTV.text = "No results found "
                     Toast.makeText(requireContext(), "No results found", Toast.LENGTH_LONG).show()
                 }
             } catch (e: JSONException) {

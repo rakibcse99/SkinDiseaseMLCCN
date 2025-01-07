@@ -12,11 +12,12 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
-            app:srcCompat="@drawable/image_eczema" />
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_menu_gallery" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/uploadImage"
@@ -68,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
-            android:textAlignment="center"
+            android:gravity="start"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -77,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:visibility="gone"
             app:cardBackgroundColor="@color/secondaryBG"
             app:cardCornerRadius="4dp"
             app:elevation="3dp">
@@ -199,8 +201,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
+            android:gravity="start"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/treatmentBtn"
